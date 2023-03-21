@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign In Form </title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static' , filename='css/style.css') }}">
+    <style>
+        body{
+            background-image:url('static/css/background_f.jpg');
+        }
+    </style>
+</head>
+<body>
+    <!-- Sing in  Form -->
+    <section class="sign-in">
+        <div class="container">
+            <div class="signin-content">
+                <div class="signin-image">
+                    <figure><img src="{{ url_for('static' , filename='css/signin-image.jpg') }}" alt="sign up image"></figure>
+                    <a href="/register" class="signup-image-link">Create an account</a>
+                </div>
+
+                <div class="signin-form">
+                    <h2 class="form-title">Sign in</h2>
+                    <form method="post" class="register-form" id="login-form" action="/sign_in">
+                        <div class="form-group">
+                            <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                            <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                            <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                        </div>
+                        <div class="form-group form-button">
+                            <input method="POST" action="/sign_in" type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                        </div>
+                    </form>
+                    <div class="social-login">
+                        <span class="social-label">Or login with</span>
+                        <ul class="socials">
+                            <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                            <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                            <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- JS -->
+<script src="{{url_for('static', filename = 'jquery/jquery.min.js')}}"></script>
+<script src="{{url_for('static', filename = 'js/main.js')}}"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
+
+
+
+
+
+
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>About Us</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod mauris eu mi rutrum, non viverra justo malesuada. </p>
+        </div>
+        <div class="col-md-3">
+          <h4>Contact Us</h4>
+          <ul class="list-unstyled">
+            <li>123 Main Street</li>
+            <li>Anytown, USA 12345</li>
+            <li>Phone: 555-555-5555</li>
+            <li>Email: info@example.com</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>Connect With Us</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <hr>
+      <p class="text-center">&copy; 2021 Your Company Name. All Rights Reserved.</p>
+    </div>
+  </footer>

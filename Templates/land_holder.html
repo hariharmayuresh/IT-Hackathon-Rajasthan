@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Farm Owner Web Application</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* General Styles */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        line-height: 1.5;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Header Styles */
+      header {
+        background-color: #2ecc71;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+
+      header p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      /* Form Styles */
+      form {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      label {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input[type="text"] {
+        font-size: 16px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        transition: all 0.3s ease;
+      }
+
+      input[type="text"]:hover,
+      input[type="text"]:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+
+      input[type="submit"] {
+        background-color: #2ecc71;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #27ae60;
+      }
+
+      /* Service Styles */
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      /* Footer Styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+      }
+    </style>
+
+    link rel="stylesheet" href="{{url_for('static',filename = 'css/fontawesome.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/templatemo-grad-school.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/owl.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/lightbox.css')}}">
+
+  </head>
+  <body>
+
+    <header class="main-header clearfix" role="header">
+        <div class="logo">
+          <a href="#"><em>Farm</em>Hires</a>
+        </div>
+        <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+        <nav id="menu" class="main-nav" role="navigation">
+          <ul class="main-menu">
+            <li class="active"><a href="#section1">Home</a></li>
+            <li class="has-submenu"><a href="#section2">About Us</a>
+              <ul class="sub-menu">
+                <li><a href="#section2">Who we are?</a></li>
+                <li><a href="#section3">What we do?</a></li>
+                <li><a href="#section3">How it works?</a></li>
+              </ul>
+            </li>
+            <li><a href="#section4">Services</a></li>
+            <!-- <li><a href="#section5">Video</a></li> -->
+            <li><a href="#section6">Contact</a></li>
+            <li class="active"><a href="/">Logout</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <div class="container">
+      <form>
+        <label for="land">Land:</label>
+        <input
+          type="text"
+          id="land"
+          name="land"
+          placeholder="Enter the land size in hectares"
+        />
+
+        <label for="Price">Price:</label>
+        <input
+          type="text"
+          id="Price"
+          name="Price"
+          placeholder="Price per Acer"
+        />
+
+        <!--<label for="Rent a person">Rent a person:</label>
+        <input
+          type="text"
+          id="Rent aperson"
+          name="Rent a person"
+          placeholder="Hire a person"
+        />
+        <input type="submit" value="Submit" />-->
+
+        <label for="Get service">Get Service:</label>
+
+        <select id="service" style="width: 520px" size: "20" name="service">
+          <option value="Tools">Tools</option>
+          <option value="Machinery">Machinery</option>
+          <option value="Services">Services</option>
+          <option value="Others">Others</option></select
+        ><br />
+      </form>
+
+      <input type="submit" value="Submit" />
+
+      <!--h2>Our Services</h2>
+      <ul>
+        <li>Harvesting</li>
+        <li>Plowing</li>
+        <li>Spraying</li>
+        <li>Seeding</li>
+        <li>Irrigation</li>
+      </ul>-->
+    </div>
+
+    
+  </body>
+  <footer>
+    <p>&copy; 2021 Farm Owner Web Application</p>
+  </footer>
+</html>
