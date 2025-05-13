@@ -42,7 +42,7 @@ Though we didn’t win, the learning and experience were truly invaluable.
 ## 🛠️ Tech Stack
 - Frontend: HTML, CSS, JavaScript
 - Platform Type: Static/Dynamic Web App Prototype
-- Deployment: GitHub Pages (or local)
+- Deployment: GitHub 
 
 ## 🤝 Acknowledgements
 - PW Skills
