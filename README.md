@@ -1,9 +1,7 @@
 ## 🌾 FarmHire – Bridging the Gap for Migrant Farmers
-
 ### 🚀 Project built during the Rajasthan IT Day Hackathon (Powered by PW Skills)
 
 
-⸻
 
 ## 📝 Project Description
 
@@ -11,20 +9,17 @@ FarmHire is a web-based platform designed to support migrant farmers who are awa
 
 Our mission: Bridge the gap between landowners and agriculture professionals using tech-driven, easy-to-use solutions.
 
-⸻
 
 ## 💡 Problem Statement
 
 “Agriculture is still a challenge” — Migrant farmers often face difficulties in managing their farmland due to distance and lack of available help. Our project aims to resolve this by offering a digital marketplace where services related to farming can be easily found and rented.
 
-⸻
 
 ## 👨‍💻 Built By
 - Mayuresh Harihar
 - Tanay Thamke
 - Faizan Ansari
 
-⸻
 
 ## 🧠 Hackathon Experience
 
@@ -36,7 +31,6 @@ We presented this project during the Rajasthan IT Day Hackathon, organized by th
 
 Though we didn’t win, the learning and experience were truly invaluable.
 
-⸻
 
 ## 🌐 Features
 - 📍 Geo-targeted service listings
@@ -44,7 +38,6 @@ Though we didn’t win, the learning and experience were truly invaluable.
 - 🔍 Browse & rent agricultural services
 - 🧾 Request history and management dashboard
 
-⸻
 
 ## 🛠️ Tech Stack
 - Frontend: HTML, CSS, JavaScript
